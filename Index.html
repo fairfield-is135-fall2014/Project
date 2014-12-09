@@ -35,6 +35,7 @@ body{
   background: #fbfbfb;
   color: #404040;
   font: normal 400 87.5%/1.4 "proxima-nova",Arial, sans-serif;
+  text-decoration: none;
 }
 
 
@@ -42,21 +43,29 @@ body{
 nav{
   background-color: #c8102e;
   height: 100px;
+  width: 100%;
 }
 
 nav ul{
   width: 1050;
   margin: 0 0 0 auto;
-   position: absolute;
+  position: absolute;
   display: block;
   top: 75px;
-  right: 0;
+  right: 15px;
+}
+
+#register ul{
+    display: block;
+    font-size: 13px;
+    top: 20px;
+    right: 15px;
 }
 
 nav ul li{
   list-style: none;
-  float: left;
   text-align: right;
+  float: left;
   font: inherit;
  
 }
@@ -66,17 +75,42 @@ nav ul li a{
   color: #ebe5db;
   text-align: right;  
   font: inherit;
+  padding-left: 10px;
+  display: block;
+  font-size: 13px;
 }
+
+
 
 nav ul li a:hover{
   color: #404040;
 }
+
 
 nav img{
   vertical-align: baseline;
   position: absolute;
   top: 35px;
   left: 15px;
+}
+
+h2{
+  color: #c8102e; 
+  font-size: 24px; 
+  font-weight: 400;}
+  
+.button{
+  padding: 10px 25px;
+  display: inline-block;
+  background-color: #2f8393;
+}
+
+.button p{
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 
@@ -92,12 +126,16 @@ nav img{
 
 <nav class="navbar" role="navigation">
       <a class="navbar-brand" href="#"><img alt="Brand" src="fbpc.png"></a>
-  <ul>
-  
+ 
+<div id="register"> 
+  <ul> 
     <li><a href="http://is-dsb.fairfield.edu/fbp/registration-step1" class="navbar-link">Register</a></li>
     <li><a href="http://is-dsb.fairfield.edu/fbp/user/login?current=featured-items" class="navbar-link">Login</a></li>
+  </ul>
+</div>
+ 
   
-  
+  <ul>
     <li><a href="http://is-dsb.fairfield.edu/fbp/competitors-guide" class="navbar-link">Competitor's Guide</a></li>
     <li><a href="http://is-dsb.fairfield.edu/fbp/getinvolved" class="navbar-link">Get Involved</a></li>
     <li><a href="http://is-dsb.fairfield.edu/fbp/directory-public" class="navbar-link">Directory</a></li> 
@@ -124,7 +162,7 @@ nav img{
 
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="about">
           <h2>The Fourth Annual Business Plan Competition</h2>
           <p>This year's funding pool is <b>over</b> $20,000 in cash and prizes:</p>
           <ul>
@@ -132,10 +170,10 @@ nav img{
             <li>$20,000 for the Finale on March 31st</li>
           </ul>  
           <p>For more information about judging criteria, eligibility rules, and other considerations, please consult the official <a href="http://is-dsb.fairfield.edu/fbpc2014/competitors-guide">Competitors Guide</a>.</p>
-          <p><a class="btn btn-default" href="http://is-dsb.fairfield.edu/fbpc2014/competitors-guide" role="button">Read The Guide</a></p>
+          <p><a class="button" href="http://is-dsb.fairfield.edu/fbpc2014/competitors-guide" role="button">Read The Guide</a></p>
         </div>
        
-        <div class="col-md-4">
+        <div class="calendar">
           <h2>Competition Calendar</h2>
           <table>
             <tr><th>Date</th><th>Event</th></tr>
@@ -151,20 +189,12 @@ nav img{
           </table>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
-        
-        
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+
 
       
 
-    
-    
-    <div id="footer">
+ <!--FOOTER-->   
+        <div id="footer">
 			<div id="footer-fill" class="clear-fix">
 				<div id="footer-main">
 
@@ -174,12 +204,10 @@ nav img{
 
 					<div id="footer-info">
 	<!-- <h4>Fairfield University</h4> -->
-<p><img src="http://www.fairfield.edu/media/website2013/styleassets/images/footer_ffld_logo.png" alt="Image: Fairfield University"></p>
 	<div class="address">
 		1073 North Benson Road<br />
 		Fairfield, Connecticut 06824<br />
 		(203) 254-4000 <br />
-		<a href="mailto:webmaster@fairfield.edu">webmaster@fairfield.edu</a>
 	</div>
 	<ul id="social-media">
 		<li><a href="https://www.facebook.com/FairfieldUniversity?utm_source=fairfieldsite&utm_medium=web&utm_campaign=int_footer_social%3B" target="_blank"><i class="icon icon-facebook"></i></a></li>
