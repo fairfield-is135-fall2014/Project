@@ -136,7 +136,22 @@ th{
   text-align: left;
 }
 
+#wrapper{
+  width: 100%;
+}
 
+#main{
+  float: left;
+  width: 50%;
+}
+
+#calendar{
+  float: right;
+}
+
+#footer{
+  clear:both
+}
 
 
 </style>
@@ -169,33 +184,31 @@ th{
     <!-- Main jumbotron video -->
     <div class="jumbotron">
       <div class="container">
-        <iframe width="970" height="720" src="//www.youtube.com/embed/sZvr5wcc_Ng" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="720" src="//www.youtube.com/embed/sZvr5wcc_Ng" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
 
+<!--End nav and jumbotron-->
 
 
 
+<div id="wrapper">
 
-
-
-
-
-    <div class="container">
-      <div class="row">
-        <div class="about">
+    <div id="main">
           <h2>The Fourth Annual Business Plan Competition</h2>
           <p>This year's funding pool is <b>over</b> $20,000 in cash and prizes:</p>
           <ul>
             <li>$2,500 for November's Elevator Pitch Contest</li>
             <li>$20,000 for the Finale on March 31st</li>
-          </ul>  
+          </ul> 
+          <br /> 
           <p>For more information about judging criteria, eligibility rules, and other considerations, please consult the official <a href="http://is-dsb.fairfield.edu/fbpc2014/competitors-guide">Competitors Guide</a>.</p>
+          <br />         
           <p><a class="button" href="http://is-dsb.fairfield.edu/fbpc2014/competitors-guide" role="button">Read The Guide</a></p>
         </div>
        
-        <div class="calendar">
+        <div id="calendar">
           <h2>Competition Calendar</h2>
           <table>
             <tr><th>Date</th><th>Event</th></tr>
@@ -210,6 +223,7 @@ th{
             <tr><td>March 31</td><td> Final Round and Gala</td></tr> 
           </table>
        </div>
+</div>
 
 
       
